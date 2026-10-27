@@ -298,7 +298,6 @@ jobs:
 
       - name: Build and stage the CI Atlas package
         id: create-playbook
-        if: ${{ !startsWith(github.ref, 'refs/heads/na-') }}
         shell: pwsh
         run: |
           $ErrorActionPreference = 'Stop'
